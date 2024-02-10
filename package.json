@@ -1,0 +1,15 @@
+{
+  "name": "allumette-website",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "My website :D",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Khalil Cointreau",
+  "license": "ISC",
+  "dependencies": {
+    "p5": "^1.9.0"
+  }
+}

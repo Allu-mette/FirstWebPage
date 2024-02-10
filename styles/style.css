@@ -10,12 +10,16 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 4;
 }
 
+main, footer, header {
+    z-index: 2;
+}
 footer, header {
-      background-color: #eae2b7;
-      padding: 30px 50px;
-      font-size: larger;
+    background-color: #eae2b7;
+    padding: 30px 50px;
+    font-size: larger;
 }
 
 
@@ -44,4 +48,9 @@ nav {
 
 nav a {
     margin-left: 40px;
+}
+
+canvas {
+    z-index: 1;
+    position: absolute;
 }

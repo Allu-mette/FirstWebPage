@@ -3,7 +3,8 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: large;
+    font-size: medium;
+    font-weight: 500;
 
     height: 100%;
     display: flex;
@@ -14,8 +15,8 @@ html, body {
 footer, header {
     background-color: #eae2b7;
     padding: 30px 50px;
-    font-size: larger;
     z-index: 4;
+    font-size: 1.3em;
 }
 
 main {
@@ -23,12 +24,21 @@ main {
     flex-direction: column;
     background: linear-gradient(#fcbf49, #f77f00);
     z-index: 0;
+    flex-flow: column;
 }
 
 
 h1 {
     color: #003049;
+    background-color: #fcbf49;
     text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: 4rem;
+    padding-left:4rem;
+    padding-right: 0;
+    margin: 50px;
+    border: solid 4px #003049;
 }
 
 a {
@@ -68,8 +78,10 @@ nav a {
     display: block;
 }
 
-.canvas-test {
+.canvas-simulation {
     display: flex;
+    margin: auto;
     border: solid 4px #003049;
     height: 20px;
+    box-shadow: 0 0 128px #f77f00;
 }

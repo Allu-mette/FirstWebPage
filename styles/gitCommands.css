@@ -1,0 +1,16 @@
+
+em {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: medium;
+    font-style: normal;
+    background-color: gray;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    color: red;
+}

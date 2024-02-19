@@ -35,11 +35,21 @@
             <div class="simulation">
                 <canvas class="canvas-simulation"></canvas>
                 <div class="settings">
-                    <div class="form-row">
+                    <div class="dimension-container">
+                        <div>
+                            <input type="radio" name="dimension" id="2D" value="2D" contextmenu="ici" checked>
+                            <label for="2D">2D</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="dimension" id="3D" value="3D">
+                            <label for="3D">3D</label>
+                        </div>
+                    </div>
+                    <div class="settings-row">
                         <label for="size" id="label-range">SELECT THE SIZE</label>
                         <input type="range" id="size" min="1" max="8" value="5">
                     </div>
-                    <div class="form-row">
+                    <div class="settings-row">
                         <input type="button" value="NEW GENERATION" id="run">
                     </div>
                 </div>

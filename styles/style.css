@@ -68,20 +68,10 @@ nav a {
     flex-direction: column;
     z-index: 2;
     margin: auto;
-    gap: 30px;
-    margin-bottom: 50px;
 }
 
 .canvas-background {
     position: absolute;
     z-index: 1;
     display: block;
-}
-
-.canvas-simulation {
-    display: flex;
-    margin: auto;
-    border: solid 4px #003049;
-    height: 20px;
-    box-shadow: 0 0 128px #f77f00;
 }

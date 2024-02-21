@@ -72,7 +72,7 @@ const mySketch = (sketch) => {
   let img = sketch.createGraphics(canvasSize, canvasSize);
 
   // Set up the canvas
-  let canvas = document.querySelector(".canvas-simulation");
+  let canvas = document.querySelector(".main__simu__canvas-simulation");
   canvas.style.setProperty("width", canvasSize + "px");
   canvas.style.setProperty("height", canvasSize + "px");
 

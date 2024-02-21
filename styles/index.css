@@ -1,0 +1,14 @@
+
+.main__title {
+    color: var(--dark-color);
+    background-color: var(--bright-orange-color);
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    padding-left:4rem;
+    padding-right: 0;
+    margin: 50px;
+    border: solid 4px #003049;
+}
+

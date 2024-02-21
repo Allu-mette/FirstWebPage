@@ -19,38 +19,35 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./index.html">Allumette</a>
+        <nav class="nav">
+            <a class="nav__link" href="./index.html">Allumette</a>
             <div>
-                <a href="./simulations.html">Simulations</a>
-                <a href="./gitCommands.html">Git commands<commands></a>
+                <a class="nav__link" href="./simulations.html">Simulations</a>
+                <a class="nav__link" href="./gitCommands.html">Git commands<commands></a>
             </div>
         </nav>
     </header>
     <main>
         <canvas class="canvas-background"></canvas>
-        <div class="div-main">
-            <h1>SIMULATIONS</h1>
-            <h2>DIAMOND SQUARE ALGORITHM</h2>
-            <div class="simulation">
-                <canvas class="canvas-simulation"></canvas>
-                <div class="settings">
-                    <div class="dimension-container">
-                        <div>
-                            <input type="radio" name="dimension" id="2D" value="2D" contextmenu="ici" checked>
-                            <label for="2D">2D</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="dimension" id="3D" value="3D">
-                            <label for="3D">3D</label>
-                        </div>
+        <div class="main main--simu">
+            <h1 class="main__title">SIMULATIONS</h1>
+            <h2 class="main__simu-title">DIAMOND SQUARE ALGORITHM</h2>
+            <div class="main__simu">
+                <canvas class="main__simu__canvas-simulation"></canvas>
+                <div class="main__simu__set">
+                    <div class="main__simu__set__box main__simu__set__box--radio">
+                        <input type="radio" name="dimension" id="2D" value="2D" checked>
+                        <label for="2D">2D</label>
+                        <input type="radio" name="dimension" id="3D" value="3D">
+                        <label for="3D" class="main__simu__set__box__label--radio">3D</label>
+
                     </div>
-                    <div class="settings-row">
+                    <div class="main__simu__set__box">
                         <label for="size" id="label-range">SELECT THE SIZE</label>
-                        <input type="range" id="size" min="1" max="8" value="5">
+                        <input type="range" class="main__simu__set__box__range" id="input-range" min="1" max="8" value="5">
                     </div>
-                    <div class="settings-row">
-                        <input type="button" value="NEW GENERATION" id="run">
+                    <div class="main__simu__set__box">
+                        <input type="button" id="input-reset" value="NEW GENERATION" >
                     </div>
                 </div>
             </div>

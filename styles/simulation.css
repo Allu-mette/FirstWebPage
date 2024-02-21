@@ -1,128 +1,125 @@
-h2 {
-  text-align: center;
-  color: #DED3A6;
+.main--simu {
+  width: fit-content;
+  margin-top: 40px;
+  z-index: 4;
+}
+.main__title {
+  color: var(--dark-color);
+  font-size: 5em;
+  font-weight: 300;
+  text-align: left;
+  margin: auto;
+  margin-left: 0;
+}
+
+.main__simu-title {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  text-align: left;
+  color: var(--white-color);
   font-size: 2em;
-  letter-spacing: 1rem;
+  letter-spacing: 1.1rem;
+  font-weight: 600;
 }
 
-.simulation {
+.main__simu {
   display: flex;
-  width: 80%;
-  margin: auto;
   flex-direction: row;
-  /*border: solid 4px #374709;*/
-  margin-bottom: 50px;
+  align-items: center;
+  gap: 80px;
+  width: fit-content;
+  margin: 50px auto;
 }
 
-.settings {
+.main__simu__canvas-simulation {
+  border: solid 6px var(--dark-color);
+  box-shadow: 0 0 128px var(--dark-orange-color);
+}
+
+.main__simu__set {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 50px;
-  margin: auto;
-  text-align: center;
-  color: #DED3A6;
 }
 
-/* Row */
-.settings-row {
+.main__simu__set, .main__simu__set input{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+input {
+  cursor: pointer;
+  box-shadow: 0 0 32 var(--dark-orange-color);
+}
+
+/* Setting Box */
+.main__simu__set__box {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  margin-bottom: 50px;
-  font: larger;
+  gap: 10px;
+  align-items: center;
 }
 
-.settings-dimension {
-  display: flex;
+/* Setting Box radio */
+.main__simu__set__box--radio {
   flex-direction: row;
-  margin: auto;
+  gap: 0px;
 }
 
-.canvas-simulation {
-  display: flex;
-  margin: auto;
-  border: solid 4px #003049;
-  height: 20px;
-  box-shadow: 0 0 128px #f77f00;
+.main__simu__set__box--radio input[type=radio] {
+  display: none;
 }
 
-/* Style pour le conteneur des boutons radio */
-.dimension-container {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  box-shadow: 0 0 64px #f77f00;
-}
-
-/* Style pour chaque bouton radio */
-.dimension-container input[type="radio"] {
-  display: none; /* Masquer le bouton radio par défaut */
-}
-
-/* Style pour l'apparence personnalisée du bouton radio */
-.dimension-container label {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 4px solid #DED3A6;
-  border-radius: 0%;
-  top: 50%;
-  left: 50%;
+.main__simu__set__box--radio label {
+  padding: 10px 30px;
+  border: 4px solid var(--white-color); 
   cursor: pointer;
 }
 
-.dimension-container input[type="radio"]:checked + label {
-  background-color: #DED3A6;
-  color: #f77f00;
-  border-color: #DED3A6;
+.main__simu__set__box--radio input[type=radio]:checked + label {
+  background-color: var(--white-color);
+  color: var(--dark-orange-color);
 }
 
-/* Range */
-.settings-row label {
-  text-shadow: 0 0 8px #f77f00;
-}
-
-.settings-row [type=range] {
+/* Range input */
+.main__simu__set__box input[type=range] {
   appearance: none;
   width: 300px;
   background: transparent;
-  cursor: pointer;
+  margin-left: 0px;
 }
 
-.settings-row [type="range"]::-webkit-slider-runnable-track {
-  background: #DED3A6;
+.main__simu__set__box input[type=range]::-webkit-slider-runnable-track {
+  background: var(--white-color);
   height: 0.5rem;
-  box-shadow: 0 0 32px #f77f00;
 }
 
-.settings-row input[type="range"]::-webkit-slider-thumb {
+.main__simu__set__box input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   margin-top: -8px;
-  background-color: #F2F2EF;
+  background-color: var(--white-color);
   height: 1.5rem;
   width: 0.5rem;
-  box-shadow: 0 0 32px #f77f00; 
+  box-shadow: 0 0 16px var(--dark-orange-color);
 }
 
-/* Submit */
-.settings-row input[type=button]{
-  font-family: 'Roboto', sans-serif;  
-  font-size: medium;
-  font-weight: 500;
-  padding: 20px;
-  color: #f77f00;
-  font-size: larger;
-  background: linear-gradient(#DED3A6, #F2F2EF);
-  border: 0;
-  border-radius: 6px;
-  box-shadow: 0 0 64px #f77f00;
+/* Button input */
+.main__simu__set__box input[type=button]{
+  background: transparent;
+  border: 4px solid var(--white-color);
+  padding: 20px 40px;
 }
 
-.settings-row [type=button]:hover{
-  color: #fcbf49;
+.main__simu__set__box [type=button]:hover{
+  color: var(--dark-orange-color);
+  background-color: var(--white-color);
   cursor: pointer;
 }
 
-.settings-row [type=button]:active{
+.main__simu__set__box [type=button]:active{
   opacity: 0.5;
 }

@@ -8,8 +8,8 @@ let grid = generateGrid(N);
 // Set the img of sketch
 sketch.setImg(grid);
 
-let resetButton = document.querySelector("#run");
-let sizeRange = document.querySelector("#size");
+let resetButton = document.querySelector("#input-reset");
+let sizeRange = document.querySelector("#input-range");
 let labelRange = document.querySelector("#label-range");
 labelRange.textContent = "SIZE: " + N;
 
